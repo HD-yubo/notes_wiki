@@ -18,7 +18,7 @@
 
 **本章目标**：建立对 ACP 的最小正确理解，避免一开始就把“编辑器协议”和“工具协议”混为一谈。
 
-![第1章：ACP 与 MCP 的边界](../assets/acp_concept/chapter-01.svg)
+![第1章：ACP 与 MCP 的边界](assets/acp_concept/chapter-01.svg)
 
 *图 1.1：ACP 解决“编辑器如何与 Agent 协作”的问题；MCP 解决“Agent 如何调用工具与资源”的问题。*
 
@@ -129,7 +129,7 @@ ACP 做的事情，就是把这两边的责任边界说清楚。
 
 **本章目标**：理解 ACP 的底层交互顺序，知道一个兼容实现最少要说哪些话。
 
-![第2章：ACP 生命周期时序](../assets/acp_concept/chapter-02.svg)
+![第2章：ACP 生命周期时序](assets/acp_concept/chapter-02.svg)
 
 *图 2.1：一个 ACP 会话必须先完成 initialize，之后才能 session/new，再进入 prompt/update 循环。*
 
@@ -319,7 +319,7 @@ Agent 的响应通常会告诉你三件事：
 
 **本章目标**：知道“OpenCode 以 ACP 提供服务”这句话在工程上到底意味着什么，以及如何接入。
 
-![第3章：OpenCode 的本地 ACP 管道](../assets/acp_concept/chapter-03.svg)
+![第3章：OpenCode 的本地 ACP 管道](assets/acp_concept/chapter-03.svg)
 
 *图 3.1：当 OpenCode 通过 `opencode acp` 启动时，它在本地通常作为 IDE 拉起的子进程，通过 stdio 和 Client 交换 JSON-RPC 消息。*
 
@@ -446,7 +446,7 @@ ACP 的 stdio 不是“发一条命令就结束”的一次性输入，而是一
 
 **本章目标**：知道自研 ACP 服务的最小实现面，以及本地和远程两种部署方式。
 
-![第4章：自建 ACP 服务的两种启动模式](../assets/acp_concept/chapter-04.svg)
+![第4章：自建 ACP 服务的两种启动模式](assets/acp_concept/chapter-04.svg)
 
 *图 4.1：同一个 Agent 核心逻辑可以被包装成两类入口：本地 stdio 进程，或远程 HTTP/WebSocket 服务。*
 
@@ -689,7 +689,7 @@ Agent 不是每次都能顺利完成任务，所以你至少要有：
 
 **本章目标**：理解 ACP 的扩展方向，以及“对接能跑”和“生产可用”之间的差距。
 
-![第5章：MCP-over-ACP 反向工具调用](../assets/acp_concept/chapter-05.svg)
+![第5章：MCP-over-ACP 反向工具调用](assets/acp_concept/chapter-05.svg)
 
 *图 5.1：MCP-over-ACP 让工具能力可以沿着同一条 ACP 通道反向回流，而不必额外开 side channel。*
 
