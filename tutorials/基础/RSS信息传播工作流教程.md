@@ -344,7 +344,7 @@ flowchart TB
     end
 
     subgraph Subscribe[订阅阶段]
-        U[你想到<br/>"我想关注这个博客"] --> URL[获取 / 发现<br/>Feed URL]
+        U[你想到<br/>`我想关注这个博客`] --> URL[获取 / 发现<br/>Feed URL]
         URL --> Reader[在阅读器中添加<br/>Feed URL]
         Reader --> DB[阅读器将 URL<br/>存入订阅列表]
     end
